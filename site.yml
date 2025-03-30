@@ -1,7 +1,9 @@
----
-- hosts: conteiners
-  become: true
+- name: My first play
+  hosts: myhosts
   tasks:
-    - name: Print OS info
-      ansible.builtin.package:
-        name: vim
+   - name: Ping my hosts
+     ansible.builtin.ping:
+
+   - name: Print message
+     ansible.builtin.debug:
+       msg: Hello world
