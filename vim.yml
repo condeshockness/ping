@@ -1,5 +1,6 @@
 - name: Instalando a ultima vesão dos pacotes Vim, nano, unzip, mtr,nmap,whois
   hosts: conteiners
+  become: true
   vars:
     ansible_python_interpreter: /usr/bin/python3
   tasks:
