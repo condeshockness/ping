@@ -2,6 +2,8 @@
 - hosts: conteiners
   become: true
   tasks:
-    - name: Print OS info
+    - name: Instalando pacotes
       ansible.builtin.package:
         name: vim
+        name: whois
+        name: nmap
