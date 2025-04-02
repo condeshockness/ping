@@ -11,7 +11,3 @@
         - nano
         - whois
       state: latest
-
-  - name: Status
-    ansible.builtin.debug:
-      msg: online
