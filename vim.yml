@@ -12,6 +12,5 @@
         - whois
       state: latest
 
-  - name: Status
-     ansible.builtin.debug:
+    ansible.builtin.debug:
        msg: Vim, nano, unzip, mtr,nmap,whois instalado com sucesso!!!
