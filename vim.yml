@@ -11,3 +11,8 @@
         - nano
         - whois
       state: latest
+
+  - name: Check whether a package called foobar is installed
+  ansible.builtin.debug:
+    msg: "{{ ansible_facts.packages['vim'] | length }} versions of foobar are installed!"
+  when: "'vim' in ansible_facts.packages"
