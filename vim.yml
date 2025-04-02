@@ -4,6 +4,4 @@
   tasks:
     - name: Instalando pacotes
       ansible.builtin.package:
-        name: vim
-        name: whois
-        name: nmap
+        name: vim whois mtr
