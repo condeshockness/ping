@@ -1,16 +1,7 @@
-- name: Atualizado conteiners
-  hosts: conteiners
-  vars:
-    ansible_python_interpreter: /usr/bin/python3 
-
-  become: true
-  tasks:
-    - name: Instalando pacotes
-      ansible.builtin.package:
-        name: vim
-
-      ansible.builtin.package:
-        name: unzip
-
-      ansible.builtin.package:
-        name: whois
+- name: Instalando a ultima vesão dos pacotes Vim, nano, unzip, mtr,nmap,whois
+  ansible.builtin.package:
+    name:
+      - vim
+      - nano
+      -whois
+    state: latest
