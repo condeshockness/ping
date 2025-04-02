@@ -7,5 +7,5 @@
     name:
       - vim
       - nano
-      -whois
+      - whois
     state: latest
