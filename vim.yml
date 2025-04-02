@@ -2,10 +2,11 @@
   hosts: conteiners
   vars:
     ansible_python_interpreter: /usr/bin/python3
-  tasks:    
-  ansible.builtin.package:
-    name:
-      - vim
-      - nano
-      - whois
-    state: latest
+  tasks:
+  - name: Instalando
+    ansible.builtin.package:
+      name:
+        - vim
+        - nano
+        - whois
+      state: latest
