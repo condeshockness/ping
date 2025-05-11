@@ -1,5 +1,5 @@
 - name: Teste de conexão
-  hosts: conteiners
+  hosts: servidor
   vars:
     ansible_python_interpreter: /usr/bin/python3 
   tasks:
